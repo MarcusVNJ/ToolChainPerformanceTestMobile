@@ -1,0 +1,6 @@
+[
+  "mobile: shell",
+  [
+    "{command=dumpsys, args=[meminfo, com.agendeiquadras, |grep TOTAL, |awk 'NR==1 {print $2,$3}', >>test.txt]}"
+  ]
+]

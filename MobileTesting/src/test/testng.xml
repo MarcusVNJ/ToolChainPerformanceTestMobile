@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" verbose="2" data-provider-thread-count="2" thread-count="2" parallel="classes">
+    <parameter name="email" value="teste@teste.com.br" />
+    <parameter name="senha" value="123456"></parameter>
+    <test verbose="2" preserve-order="true"
+          name="/home/stf/Documentos/MobileTesting/src/test/java/Plugin_openSTF_Appium/Agendei.java"
+          >
+        <classes>
+            <class name="ScriptTest.Agendei">
+                <methods>
+                    <include name="realizaTutorial"/>
+                    <include name="realizaLogin"/>
+                    <include name="selecionaQuadra"/>
+                    <include name="reservaQuadra"/>
+                    <include name="editaPerfil"/>
+                    <include name="realizaCadastro"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
